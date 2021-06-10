@@ -4,8 +4,11 @@
 /* background-repeat:no-repeat; */
 height:800px;
 width:auto;
-transition:background-image 3s ease-in-out;
+transition:background-image 3s ease-in-out ,color 3s ease-in-out;
 
+
+color:white;
+/* transition: ease-in-out; */
 }
 /* .img2{
     background-image:url();
@@ -16,23 +19,27 @@ transition:background-image 3s ease-in-out;
     } */ 
 
 .bacimg:hover{
-    
-
+    /*https://images.unsplash.com/photo-1623116135497-a90bdc0ddca9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80*/
+    /* https://images.unsplash.com/photo-1622900741012-d2faa32e4524?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80 */
     /* background-image:url("https://images.unsplash.com/photo-1622912789333-ba8bf8242e27?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"); */
-background-image: url("https://images.unsplash.com/photo-1622900741012-d2faa32e4524?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+background-image: url("https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80");
 /* background-size:cover; */
 background-size:cover;
 background-repeat:no-repeat;
+color:gray;
 }
-.container{
 
-color:white;
+
+.container{
+/* 
+color:white; */
 font-weight:bold;
 text-align:center;
 padding-top:10%;
 font-size:50px;
 
 }
+
 .ho{
     display:flex;
 align-items:center;
@@ -83,7 +90,7 @@ img{
 }
 img:hover{
     box-shadow: 0 0.5em 0.5em -0.4em black;
-    transform: translateY(-4px);
+    transform: translateY(-2px);
     cursor:pointer;
 }
 
@@ -115,8 +122,34 @@ margin-top:20px;
     letter-spacing:4px;
     padding-top:20px;
     background-color:#e9ecef; 
-    
+   
 }
+
+#row1{
+    transition:color 1s ease-in-out;
+}
+
+#row1 .col-sm:nth-of-type(1):hover{
+
+color:#ff4d6d;
+
+}
+#row1 .col-sm:nth-of-type(2):hover{
+
+
+    color:#2ec4b6;
+    
+    }
+    #row1 .col-sm:nth-of-type(3):hover{
+
+
+
+color:#ffea00;
+  
+        
+        }
+
+
 .puraa{
     background-color:#e9ecef; 
     height:700px;

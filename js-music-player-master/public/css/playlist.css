@@ -1,0 +1,244 @@
+body {
+    background-color: black;
+  
+    /* Smoothly transition the background color */
+    transition: background-color .5s;
+    margin:0px;
+  }
+  .leftbase{
+    height: 100%;
+    width: 22%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  .sidebarbuttons{
+    display:flex;
+    margin:5px;
+    /* justify-content: center; */
+    flex-direction: column;
+    
+  }
+  .buttons{
+    color:black;
+    }
+  .button{
+    padding:20px;
+  }
+  .maincontent{
+    display:flex;
+    flex-direction: column;
+    margin-left:22%;
+    margin-bottom:17%;
+  }
+  .sidebarbuttons button{
+    width:100%;
+  }
+  nav{
+  margin-left:22%;
+  }
+
+  .sidetrack{
+    display:flex;
+    flex-direction: row;
+  }
+  
+  footer{
+  background-color:gray;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding:0px;
+  margin:0px;
+  width:100%;
+  height:17%;
+  
+  position:fixed;
+  bottom:0;
+  width:100%;
+  z-index:100;
+  }
+  .baseline{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .details {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 25px;
+  }
+  
+  .track-art {
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    background-image: url("https://resizing.flixster.com/XESWu9QIXpLBsLgbooDM-atLVoE=/206x305/v2/https://flxt.tmsimg.com/assets/p13240935_p_v13_ac.jpg");
+    background-size: cover;
+    border-radius: 15%;
+  }
+  
+  
+  
+  
+  
+  
+  .now-playing {
+    font-size: 1rem;
+  }
+  
+  .track-name {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    color:lightgray;
+
+margin-left:10px;  
+}
+  
+  .track-artist {
+    font-size: 3rem;
+    margin-bottom: 25px;
+margin-left:12px;
+    color:gray;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .playlist{
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+/* background-color:crimson; */
+margin-right:4%;
+margin-left:4%;
+padding:10px;
+font-size:large;
+justify-content: center;
+  }
+  /* .playlist{
+      padding:10px;
+      width:100%;
+  } */
+  .song{
+    /* margin-bottom:1%; */
+    /* background-color:gray; */
+    padding:10px;
+    width:100%;
+    
+  }
+.song:hover{
+  color:#f72585;
+}
+
+
+
+  .playlist a{
+    width:100%;
+    text-decoration: none;
+
+  }
+ a{
+   color:gray;
+   text-decoration: none;
+  
+ }
+/* 
+  .dropdown {
+    position:fixed;
+    align-items: flex-end;
+    justify-content: flex-end;
+    /* background-color: blue; */
+    /* display: inline-block;
+  } */
+   */
+
+#dropdownMenuButton
+{
+  float:right;
+  right:0;
+  background-color: blue;
+
+
+}
+
+  
+  .playpause-track, .prev-track, .next-track {
+    padding: 16px;
+    opacity: 0.8;
+  font-size: 10px;
+    /* Smoothly transition the opacity */
+    transition: opacity .2s;
+  }
+  
+  .playpause-track:hover, .prev-track:hover, .next-track:hover {
+    opacity: 1.0;
+  }
+
+
+
+  
+  .slider_container {
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Modify the appearance of the slider */
+  .seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  /* Modify the appearance of the slider thumb */
+  .seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .seek_slider:hover, .volume_slider:hover {
+    opacity: 1.0;
+  }
+  
+  .seek_slider {
+    width: 60%;
+  }
+  
+  .volume_slider {
+    width: 30%;
+  }
+  
+  .current-time, .total-duration {
+    padding: 10px;
+  }
+  
+  i.fa-volume-down, i.fa-volume-up {
+    padding: 10px;
+  }
+  
+  i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
+    cursor: pointer;
+  }

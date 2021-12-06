@@ -1,0 +1,222 @@
+body {
+  background-color: black;
+
+  /* Smoothly transition the background color */
+  transition: background-color .5s;
+  margin:0px;
+}
+.leftbase{
+  height: 100%;
+  width: 22%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.dropdown{
+  margin:10px;
+}
+
+
+.sidebarbuttons{
+  display:flex;
+  margin:5px;
+  /* justify-content: center; */
+  flex-direction: column;
+  
+}
+.button{
+  padding:20px;
+}
+.maincontent{
+  display:flex;
+  flex-direction: column;
+  margin-left:22%;
+  margin-bottom:10%;
+}
+.sidetrack{
+  display:flex;
+  flex-direction: row;
+}
+.sidebarbuttons button{
+  width:100%;
+}
+
+footer{
+background-color:gray;
+display:flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+padding:0px;
+margin:0px;
+width:100%;
+height:auto;
+
+position:fixed;
+bottom:0;
+width:100%;
+z-index:100;
+}
+.baseline{
+  display: flex;
+  flex-direction: row;
+  
+}
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+}
+.buttons{
+color:black;
+}
+
+
+.track-art {
+  margin: 25px;
+  height: 200px;
+  width: 200px;
+  border-radius: 15%;
+}
+#song1{
+  background-image: url("https://resizing.flixster.com/XESWu9QIXpLBsLgbooDM-atLVoE=/206x305/v2/https://flxt.tmsimg.com/assets/p13240935_p_v13_ac.jpg");
+  background-size: cover;
+  
+}
+
+#song2{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRdGrvj7WL4qi_Ugm-gGUGrjDpYGG8kp7s-A&usqp=CAU");
+  background-size: cover;
+
+}#song3{
+  background-image: url("https://a10.gaanacdn.com/gn_img/albums/10q3Zj1352/q3ZR6q4035/size_m_1629048201.jpg");
+  background-size: cover;
+
+}#song4{
+  background-image: url("https://a10.gaanacdn.com/gn_img/albums/D0PKLrWGl9/0PKLDnzwKG/size_m_1581694054.jpg");
+  background-size: cover;
+
+}#song5{
+  background-image: url("https://a10.gaanacdn.com/gn_img/albums/lJvKa56KDV/vKa1meQnKD/size_m_1630427115.jpg");
+  background-size: cover;
+
+}#song6{
+  background-image: url("https://a10.gaanacdn.com/gn_img/albums/JD2KJAbOLw/2KJyB1DPbO/size_m.jpg");
+  background-size: cover;
+
+}#song7{
+  background-image: url("https://a10.gaanacdn.com/gn_img/albums/2lV3dl13Rg/V3dldLBE3R/size_m.jpg");
+  background-size: cover;
+
+}#song8{
+  background-image: url("https://a10.gaanacdn.com/gn_img/albums/oAJbDElKnL/AJbDB2p03n/size_m.jpg");
+  background-size: cover;
+
+}#song9{
+  background-image: url("https://resizing.flixster.com/XESWu9QIXpLBsLgbooDM-atLVoE=/206x305/v2/https://flxt.tmsimg.com/assets/p13240935_p_v13_ac.jpg");
+  background-size: cover;
+
+}#song10{
+  background-image: url("https://resizing.flixster.com/XESWu9QIXpLBsLgbooDM-atLVoE=/206x305/v2/https://flxt.tmsimg.com/assets/p13240935_p_v13_ac.jpg");
+  background-size: cover;
+
+}
+
+
+
+
+.now-playing {
+  font-size: 1rem;
+}
+
+.track-name {
+  font-size: 1.5rem;
+  color:lightgray;
+}
+
+.track-artist {
+  font-size: 1.5rem;
+  color:gray;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.playpause-track, .prev-track, .next-track {
+  padding: 16px;
+  opacity: 0.8;
+font-size: 10px;
+  /* Smoothly transition the opacity */
+  transition: opacity .2s;
+}
+
+.playpause-track:hover, .prev-track:hover, .next-track:hover {
+  opacity: 1.0;
+}
+
+.slider_container {
+  width: 75%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modify the appearance of the slider */
+.seek_slider, .volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: black;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+/* Modify the appearance of the slider thumb */
+.seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+
+
+.seek_slider:hover, .volume_slider:hover {
+  opacity: 1.0;
+}
+
+.seek_slider {
+  width: 60%;
+}
+
+.volume_slider {
+  width: 30%;
+}
+
+.current-time, .total-duration {
+  padding: 10px;
+}
+
+i.fa-volume-down, i.fa-volume-up {
+  padding: 10px;
+}
+
+i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
+  cursor: pointer;
+}
